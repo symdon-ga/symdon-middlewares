@@ -1,0 +1,5 @@
+#+TITLE: Terraform
+
+#+BEGIN_SRC shell
+terraform apply -auto-approve
+#+END_SRC
