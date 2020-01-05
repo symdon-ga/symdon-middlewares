@@ -1,5 +1,16 @@
 #+TITLE: Terraform
 
+#+NAME: setup
+#+BEGIN_SRC shell
+terraform init
+#+END_SRC
+
+#+NAME: plan
+#+BEGIN_SRC shell
+terraform plan
+#+END_SRC
+
+#+NANE: apply
 #+BEGIN_SRC shell
 terraform apply -auto-approve
 #+END_SRC
