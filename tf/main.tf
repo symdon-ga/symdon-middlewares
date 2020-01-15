@@ -8,6 +8,10 @@ resource "mysql_database" "sbk" {
   name = "sbk_local"
 }
 
+resource "mysql_database" "symdon_django" {
+  name = "symdon_django_local"
+}
+
 provider "postgresql" {
   host = "127.0.0.1"
   username = "postgres"
