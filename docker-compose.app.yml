@@ -57,3 +57,7 @@ services:
       - "AWS_REGION=ap-northeast-1"
       - "AWS_ACCESS_KEY_ID=no"
       - "AWS_SECRET_ACCESS_KEY=no"
+  prometheus:
+    image: prom/prometheus:v2.15.2
+    ports:
+      - "9090:9090"
