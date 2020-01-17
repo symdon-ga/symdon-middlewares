@@ -1,0 +1,5 @@
+---
+- listen: service rabbitmq-server reload by symdon_rabbitmq
+  systemd:
+    name: rabbitmq-server.service
+    state: reloaded

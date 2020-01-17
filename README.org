@@ -1,15 +1,40 @@
+#+TITLE: symdon-middlewares
 
+[[https://circleci.com/gh/symdon-ga/symdon-middlewares.svg?style=svg]]
 
-|----------------+-------|
-| Service        |  Port |
-|----------------+-------|
-| haproxy        |    80 |
-| haproxy        |   443 |
-| redis          |  6379 |
-| mysql          |  3306 |
-| mailhog        |  1025 |
-| mailhog        |  8025 |
-| azurite        | 10000 |
-| dynamodb       |  8000 |
-| dynamodb_admin |  8001 |
-|----------------+-------|
+|-------+----------------|
+|  Port | Service        |
+|-------+----------------|
+|    80 | haproxy        |
+|   443 | haproxy        |
+|  1025 | mailhog        |
+|  3306 | mysql          |
+|  6379 | redis          |
+|  8000 | dynamodb       |
+|  8001 | dynamodb_admin |
+|  8025 | mailhog        |
+|  9000 | minio          |
+|  9090 | prometheus     |
+| 10000 | azurite        |
+| 15671 | rabbitmq       |
+| 15672 | rabbitmq       |
+|-------+----------------|
+
+** Deploy
+
+The following file settings are required.
+
+|--------------------------------------+-----------------------------|
+| File path                            | Description                 |
+|--------------------------------------+-----------------------------|
+| ~/.symdon.ga/ansible/hosts           | Inventory file              |
+| ~/.symdon.ga/ansible/.vault_password | Ansible vault password file |
+|--------------------------------------+-----------------------------|
+
+Run the following command when setup is complete.
+
+#+BEGIN_EXAMPLE
+make deploy
+#+END_EXAMPLE
+
+[[https://user-images.githubusercontent.com/50688746/70372788-fcdcc580-1926-11ea-9493-a40105cde4e2.jpg]]
