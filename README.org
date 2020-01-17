@@ -13,11 +13,13 @@
 |  8000 | dynamodb       |
 |  8001 | dynamodb_admin |
 |  8025 | mailhog        |
+|  8845 | errbit         |
 |  9000 | minio          |
 |  9090 | prometheus     |
 | 10000 | azurite        |
 | 15671 | rabbitmq       |
 | 15672 | rabbitmq       |
+| 27017 | mongo          |
 |-------+----------------|
 
 ** Deploy
