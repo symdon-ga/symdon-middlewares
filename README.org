@@ -1,21 +1,22 @@
 
-|----------------+-------|
-| Service        |  Port |
-|----------------+-------|
-| azurite        | 10000 |
-| dynamodb       |  8000 |
-| dynamodb_admin |  8001 |
-| haproxy        |    80 |
-| haproxy        |   443 |
-| mailhog        |  1025 |
-| mailhog        |  8025 |
-| minio          |  9000 |
-| mysql          |  3306 |
-| prometheus     |  9090 |
-| rabbitmq       | 15671 |
-| rabbitmq       | 15672 |
-| redis          |  6379 |
-|----------------+-------|
+|-------+----------------|
+|  Port | Service        |
+|-------+----------------|
+|    80 | haproxy        |
+|   443 | haproxy        |
+|  1025 | mailhog        |
+|  3306 | mysql          |
+|  6379 | redis          |
+|  8000 | dynamodb       |
+|  8001 | dynamodb_admin |
+|  8025 | mailhog        |
+|  9000 | minio          |
+|  9090 | prometheus     |
+| 10000 | azurite        |
+| 15671 | rabbitmq       |
+| 15672 | rabbitmq       |
+|-------+----------------|
+
 
 ** Deploy
 
