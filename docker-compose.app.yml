@@ -74,3 +74,9 @@ services:
     image: prom/prometheus:v2.15.2
     ports:
       - "9090:9090"
+
+  rabbitmq:
+    image: rabbitmq:3.8.2-management-alpine
+    ports:
+      - "15671:15671"
+      - "15672:15672"
