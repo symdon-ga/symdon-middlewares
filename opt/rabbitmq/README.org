@@ -1,0 +1,32 @@
+#+TITLE: symdon-rabbitmq
+
+[[https://circleci.com/gh/symdon-ga/symdon-rabbitmq.svg?style=svg]]
+
+This rabbit hutch currently has one rabbit.
+
+[[https://user-images.githubusercontent.com/50688746/70372788-fcdcc580-1926-11ea-9493-a40105cde4e2.jpg]]
+
+** Start
+
+To use it locally, run the following command.
+
+#+BEGIN_EXAMPLE
+docker-compose up
+#+END_EXAMPLE
+
+** Deploy
+
+The following file settings are required.
+
+|--------------------------------------+-----------------------------|
+| File path                            | Description                 |
+|--------------------------------------+-----------------------------|
+| ~/.symdon.ga/ansible/hosts           | Inventory file              |
+| ~/.symdon.ga/ansible/.vault_password | Ansible vault password file |
+|--------------------------------------+-----------------------------|
+
+Run the following command when setup is complete.
+
+#+BEGIN_EXAMPLE
+cd ansible && ansible-playbook site.yml
+#+END_EXAMPLE

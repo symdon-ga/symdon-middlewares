@@ -1,0 +1,14 @@
+# ---
+- name: install rabbitmq
+  notify: service rabbitmq-server reload by symdon_rabbitmq
+  apt:
+    name: rabbitmq-server
+
+- name: configuration rabbitmq
+  notify: service rabbitmq-server reload by symdon_rabbitmq
+  template:
+    src: rabbitmq-env.conf
+    dest: /etc/rabbitmq/rabbitmq-env.conf
+    owner: "{{ symdon_rabbitmq.owner }}"
+    group: "{{ symdon_rabbitmq.group }}"
+    mode: '0644'

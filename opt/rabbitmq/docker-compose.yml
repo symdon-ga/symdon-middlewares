@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.8.2-management-alpine
+    ports:
+      - "15671:15671"
+      - "15672:15672"
