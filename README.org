@@ -2,25 +2,30 @@
 
 [[https://circleci.com/gh/symdon-ga/symdon-middlewares.svg?style=svg]]
 
-|-------+----------------|
-|  Port | Service        |
-|-------+----------------|
-|    80 | haproxy        |
-|   443 | haproxy        |
-|  1025 | mailhog        |
-|  3306 | mysql          |
-|  6379 | redis          |
-|  8000 | dynamodb       |
-|  8001 | dynamodb_admin |
-|  8025 | mailhog        |
-|  8845 | errbit         |
-|  9000 | minio          |
-|  9090 | prometheus     |
-| 10000 | azurite        |
-| 15671 | rabbitmq       |
-| 15672 | rabbitmq       |
-| 27017 | mongo          |
-|-------+----------------|
+|-------+----------------+-----------------------------|
+|  Port | Service        | Description                 |
+|-------+----------------+-----------------------------|
+|    80 | haproxy        |                             |
+|   443 | haproxy        |                             |
+|  1025 | mailhog        |                             |
+|  3306 | mysql          |                             |
+|  5044 | logstash       | Beats                       |
+|  5601 | kibana         |                             |
+|  6379 | redis          |                             |
+|  8000 | dynamodb       |                             |
+|  8001 | dynamodb_admin |                             |
+|  8025 | mailhog        |                             |
+|  8845 | errbit         |                             |
+|  9000 | minio          |                             |
+|  9090 | prometheus     |                             |
+|  9200 | elasticsearch  | Web                         |
+|  9300 | elasticsearch  | Communication between nodes |
+|  9600 | logstash       | API endpoint                |
+| 10000 | azurite        |                             |
+| 15671 | rabbitmq       |                             |
+| 15672 | rabbitmq       |                             |
+| 27017 | mongo          |                             |
+|-------+----------------+-----------------------------|
 
 ** Deploy
 
