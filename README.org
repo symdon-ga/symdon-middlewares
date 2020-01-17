@@ -1,15 +1,37 @@
 
-
 |----------------+-------|
 | Service        |  Port |
 |----------------+-------|
-| haproxy        |    80 |
-| haproxy        |   443 |
-| redis          |  6379 |
-| mysql          |  3306 |
-| mailhog        |  1025 |
-| mailhog        |  8025 |
 | azurite        | 10000 |
 | dynamodb       |  8000 |
 | dynamodb_admin |  8001 |
+| haproxy        |    80 |
+| haproxy        |   443 |
+| mailhog        |  1025 |
+| mailhog        |  8025 |
+| minio          |  9000 |
+| mysql          |  3306 |
+| prometheus     |  9090 |
+| rabbitmq       | 15671 |
+| rabbitmq       | 15672 |
+| redis          |  6379 |
 |----------------+-------|
+
+** Deploy
+
+The following file settings are required.
+
+|--------------------------------------+-----------------------------|
+| File path                            | Description                 |
+|--------------------------------------+-----------------------------|
+| ~/.symdon.ga/ansible/hosts           | Inventory file              |
+| ~/.symdon.ga/ansible/.vault_password | Ansible vault password file |
+|--------------------------------------+-----------------------------|
+
+Run the following command when setup is complete.
+
+#+BEGIN_EXAMPLE
+make deploy
+#+END_EXAMPLE
+
+[[https://user-images.githubusercontent.com/50688746/70372788-fcdcc580-1926-11ea-9493-a40105cde4e2.jpg]]
