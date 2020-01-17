@@ -75,6 +75,7 @@ services:
     ports:
       - "9090:9090"
 
+  # This rabbit hutch currently has one rabbit.
   rabbitmq:
     image: rabbitmq:3.8.2-management-alpine
     ports:
