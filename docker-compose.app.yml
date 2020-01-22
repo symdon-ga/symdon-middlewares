@@ -116,7 +116,7 @@ services:
       discovery.type: single-node
 
   logstash:
-    image: logstash:7.5.1
+    image: docker.elastic.co/logstash/logstash:7.5.2
     ports:
       - "5044:5044"
       - "9600:9600"
